@@ -28,7 +28,7 @@ TIMES_MATCHED=`expr $MATCHED_ROW_NUM - $ORIG_ROW_NUM`
 
 echo "Matched start sequence in plasmid ${TIMES_MATCHED} time"
 
-if [ $TIMES_MATCHED=1 ]; then  
+if [[ "$TIMES_MATCHED" == 1 ]]; then  
 
    #make variables for sequence before or after specified start sequence
    SECOND=`perl -pe "s/$val/\n$val/" ${SEQ}_sequence | head -1`
