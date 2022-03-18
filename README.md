@@ -20,3 +20,8 @@ So running the script can be done as so:
 ```
 ./plasmid_align_start.sh your_plasmid_sequence.fasta CTCAGACCCTTTTAGTCAGTGTGGAAAATCTCTAGCAGTGGCGCCC
 ```
+
+Note, you may need to give execute permission to the script file, like so:
+```
+chmod a+x ./plasmid_align_start.sh
+```
