@@ -20,7 +20,7 @@ sed '1d' $SEQ | tr '[:lower:]' '[:upper:]' > ${SEQ}_sequence
 
 #remove first line and match to sequence
 
-MATCHED_ROW_NUM=`perl -pe "s/$val/\n$val$1/" ${SEQ}_sequence | wc -l`
+MATCHED_ROW_NUM=`perl -pe "s/$val/\n$val$1/g" ${SEQ}_sequence | wc -l`
 
 #check how many times the start sequence was matched:
 ORIG_ROW_NUM=`cat ${SEQ}_sequence | wc -l`
