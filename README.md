@@ -22,6 +22,8 @@ So running the script can be done as so:
 ./plasmid_align_start.sh your_plasmid_sequence.fasta CTCAGACCCTTTTAGTCAGTGTGGAAAATCTCTAGCAGTGGCGCCC
 ```
 
+Note, this isn't attempting to match the reverse complement. If your plasmidsaurus sequence is the reverse complement of your reference, convert it first before running this tool.
+
 Note, you may need to give execute permission to the script file, like so:
 ```
 chmod a+x ./plasmid_align_start.sh
