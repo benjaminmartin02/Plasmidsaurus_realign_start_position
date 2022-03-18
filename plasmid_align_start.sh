@@ -14,7 +14,7 @@ echo "Start sequence after conversion to uppercase (if needed): $val"
 #make temp file with header
 head -1 $SEQ > ${SEQ}_fasta_header.txt
 
-#make temp file with sequence, also include code snippet to convert plasmid sequence to uppercase
+#make temp file with sequence, also include code snippet to convert any lowercase sequence to uppercase
 sed '1d' $SEQ | tr '[:lower:]' '[:upper:]' > ${SEQ}_sequence
 
 
