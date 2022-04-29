@@ -28,3 +28,10 @@ Note, you may need to give execute permission to the script file, like so:
 ```
 chmod a+x ./plasmid_align_start.sh
 ```
+
+### Annotation
+If you want to annotate your plasmid, like plasmidsaurus does, I recommend pLannotate: http://plannotate.barricklab.org/
+
+McGuffie,M.J. and Barrick,J.E. (2021) pLannotate: engineered plasmid annotation. Nucleic Acids Research
+DOI: 10.1093/nar/gkab374
+
